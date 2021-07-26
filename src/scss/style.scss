@@ -1,0 +1,39 @@
+@import 'common/_destyle.scss';
+@import 'common/_responsive.scss';
+@import 'common/font&color';
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 750px;
+    margin: 0 auto;
+    @include tab{
+        width: 100vw;
+    }
+}
+.wrapper{
+    width: 100vw;
+}
+.wrapper-sp{
+    width: 100%;
+    
+}
+img{
+    width: 100%;
+}
+.cta{
+    position: fixed;
+    width: 80px;
+    right: 0;
+    top: 10%;
+    display:none;
+    &.active{
+        display: block;
+        @include tab{
+            display: block;
+        }
+    }
+}
